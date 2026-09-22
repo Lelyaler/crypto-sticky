@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Площадка для реализации эксклюзивных криптостикеров и участия в live-аукционах." />
     <title>PG - коллекция стикеров</title>
+    <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/MullerBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/RussoOne-Regular.woff" as="font" type="font/woff" crossorigin />
+    <link rel="preload" href="img/c-2.webp" as="image" type="image/webp" fetchpriority="high" />
     <link rel="stylesheet" href="style/normalize.css" />
-    <link rel="stylesheet" href="style/swiper-bundle.min.css" />
+    <link rel="preload" href="style/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="style/swiper-bundle.min.css" /></noscript>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/media.css" />
   </head>
@@ -18,6 +24,8 @@
           <img
             src="img/slotspgsoft-com-br-logo-mobile.svg"
             alt="Логотип компании"
+            width="47"
+            height="26"
           />
         </a>
         <nav class="nav header__nav">
@@ -47,7 +55,14 @@
             </div>
           </div>
           <div class="hero__img">
-            <img src="img/c-2.webp" alt="bonus" />
+            <img
+              src="img/c-2.webp"
+              alt="bonus"
+              width="784"
+              height="614"
+              fetchpriority="high"
+              decoding="async"
+            />
           </div>
         </div>
       </section>
@@ -59,14 +74,25 @@
           </h2>
           <div class="auction-bet-section__content">
             <div class="auction-bet-section__image">
-              <img src="img/6.jpg" alt="Стикер witcher" />
+              <img
+                src="img/6.webp"
+                alt="Стикер witcher"
+                width="512"
+                height="512"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div class="auction-bet-section__info">
               <div class="auction-owner auction-bet-section__owner">
                 <img
-                  src="img/avatar.png"
+                  src="img/avatar.webp"
                   alt="Аватарка владельца Serge"
                   class="auction-owner__avatar"
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <span class="auction-owner__nickname">Serge_VM222</span>
               </div>
@@ -112,16 +138,24 @@
               <article class="auction-product">
                 <div class="auction-product__image">
                   <img
-                    src="img/auction-1.png"
+                    src="img/auction-1.webp"
                     alt="Изображение стикера Alien (green) e_e"
+                    width="160"
+                    height="160"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div class="auction-product__info">
                   <div class="auction-owner auction__owner">
                     <img
-                      src="img/avatar-1.jpg"
+                      src="img/avatar-1.webp"
                       alt="Аватарка владельца Frank.Nagval"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">Frank.Nagval</span>
                   </div>
@@ -137,16 +171,24 @@
               <article class="auction-product">
                 <div class="auction-product__image">
                   <img
-                    src="img/auction-2.png"
+                    src="img/auction-2.webp"
                     alt="Изображение стикера CoBRRRa"
+                    width="160"
+                    height="160"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div class="auction-product__info">
                   <div class="auction-owner auction__owner">
                     <img
-                      src="img/avatar-2.jpg"
+                      src="img/avatar-2.webp"
                       alt="Аватарка владельца CPH_777"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">CPH_777</span>
                   </div>
@@ -160,16 +202,24 @@
               <article class="auction-product">
                 <div class="auction-product__image">
                   <img
-                    src="img/auction-3.png"
+                    src="img/auction-3.webp"
                     alt="Изображение стикера Diamonds (4)"
+                    width="160"
+                    height="160"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div class="auction-product__info">
                   <div class="auction-owner auction__owner">
                     <img
-                      src="img/avatar-3.jpg"
+                      src="img/avatar-3.webp"
                       alt="Аватарка владельца sUpah_kiLLah"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">sUpah_kiLLah</span>
                   </div>
@@ -185,16 +235,24 @@
               <article class="auction-product">
                 <div class="auction-product__image">
                   <img
-                    src="img/auction-4.png"
+                    src="img/auction-4.webp"
                     alt="Изображение стикера Holofobia-2"
+                    width="160"
+                    height="160"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div class="auction-product__info">
                   <div class="auction-owner auction__owner">
                     <img
-                      src="img/avatar-4.jpg"
+                      src="img/avatar-4.webp"
                       alt="Аватарка владельца ttgs"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">ttgs</span>
                   </div>
@@ -210,16 +268,24 @@
               <article class="auction-product">
                 <div class="auction-product__image">
                   <img
-                    src="img/auction-5.png"
+                    src="img/auction-5.webp"
                     alt="Изображение стикера Baby Yoda 1"
+                    width="160"
+                    height="160"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div class="auction-product__info">
                   <div class="auction-owner auction__owner">
                     <img
-                      src="img/avatar-5.jpg"
+                      src="img/avatar-5.webp"
                       alt="Аватарка владельца Peppppe22"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">Peppppe22</span>
                   </div>
@@ -235,16 +301,24 @@
               <article class="auction-product">
                 <div class="auction-product__image">
                   <img
-                    src="img/auction-6.png"
+                    src="img/auction-6.webp"
                     alt="Изображение стикера alien vs. predator (01)"
+                    width="160"
+                    height="160"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div class="auction-product__info">
                   <div class="auction-owner auction__owner">
                     <img
-                      src="img/avatar-6.jpg"
+                      src="img/avatar-6.webp"
                       alt="Аватарка владельца 1300e1440"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">1300e1440</span>
                   </div>
@@ -262,16 +336,24 @@
               <article class="auction-product">
                 <div class="auction-product__image">
                   <img
-                    src="img/auction-7.png"
+                    src="img/auction-7.webp"
                     alt="Изображение стикера IAMDECEPTICON"
+                    width="160"
+                    height="160"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div class="auction-product__info">
                   <div class="auction-owner auction__owner">
                     <img
-                      src="img/avatar-7.jpg"
+                      src="img/avatar-7.webp"
                       alt="Аватарка владельца Robert_Wward"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">Robert_Wward</span>
                   </div>
@@ -285,16 +367,24 @@
               <article class="auction-product">
                 <div class="auction-product__image">
                   <img
-                    src="img/auction-8.png"
+                    src="img/auction-8.webp"
                     alt="Изображение стикера Ghostbusterrrrrrrs"
+                    width="186"
+                    height="160"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div class="auction-product__info">
                   <div class="auction-owner auction__owner">
                     <img
-                      src="img/avatar-8.jpg"
+                      src="img/avatar-8.webp"
                       alt="Аватарка владельца ttgs"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">ttgs</span>
                   </div>
@@ -321,60 +411,48 @@
                 <div class="new__stickers">
                   <picture>
                     <source
-                      srcset="img/new-6-tablet.png"
+                      srcset="img/new-6-tablet.webp"
                       media="(max-width: 1440px)"
+                      type="image/webp"
                     />
-                    <img src="img/new-6.png" alt="Изображение стикера" />
+                    <img
+                      src="img/new-6.webp"
+                      alt="Изображение стикера"
+                      width="302"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </picture>
                   <picture>
                     <source
-                      srcset="img/new-7-tablet.png"
+                      srcset="img/new-7-tablet.webp"
                       media="(max-width: 1440px)"
+                      type="image/webp"
                     />
-                    <img src="img/new-7.png" alt="Изображение стикера" />
+                    <img
+                      src="img/new-7.webp"
+                      alt="Изображение стикера"
+                      width="304"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </picture>
                   <picture>
                     <source
-                      srcset="img/new-8-tablet.png"
+                      srcset="img/new-8-tablet.webp"
                       media="(max-width: 1440px)"
+                      type="image/webp"
                     />
-                    <img src="img/new-8.png" alt="Изображение стикера" />
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="new__stickers">
-                  <picture>
-                    <source
-                      srcset="img/new-9-tablet.png"
-                      media="(max-width: 1440px)"
+                    <img
+                      src="img/new-8.webp"
+                      alt="Изображение стикера"
+                      width="618"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
                     />
-                    <img src="img/new-9.png" alt="Изображение стикера" />
-                  </picture>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="new__stickers">
-                  <picture>
-                    <source
-                      srcset="img/new-1-tablet.png"
-                      media="(max-width: 1440px)"
-                    />
-                    <img src="img/new-1.png" alt="Изображение стикера" />
-                  </picture>
-                  <picture>
-                    <source
-                      srcset="img/new-2-tablet.png"
-                      media="(max-width: 1440px)"
-                    />
-                    <img src="img/new-2.png" alt="Изображение стикера" />
-                  </picture>
-                  <picture>
-                    <source
-                      srcset="img/new-3-tablet.png"
-                      media="(max-width: 1440px)"
-                    />
-                    <img src="img/new-3.png" alt="Изображение стикера" />
                   </picture>
                 </div>
               </div>
@@ -382,17 +460,101 @@
                 <div class="new__stickers">
                   <picture>
                     <source
-                      srcset="img/new-4-tablet.png"
+                      srcset="img/new-9-tablet.webp"
                       media="(max-width: 1440px)"
+                      type="image/webp"
                     />
-                    <img src="img/new-4.png" alt="Изображение стикера" />
+                    <img
+                      src="img/new-9.webp"
+                      alt="Изображение стикера"
+                      width="1280"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new__stickers">
+                  <picture>
+                    <source
+                      srcset="img/new-1-tablet.webp"
+                      media="(max-width: 1440px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="img/new-1.webp"
+                      alt="Изображение стикера"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </picture>
                   <picture>
                     <source
-                      srcset="img/new-5-tablet.png"
+                      srcset="img/new-2-tablet.webp"
                       media="(max-width: 1440px)"
+                      type="image/webp"
                     />
-                    <img src="img/new-5.png" alt="Изображение стикера" />
+                    <img
+                      src="img/new-2.webp"
+                      alt="Изображение стикера"
+                      width="300"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                  <picture>
+                    <source
+                      srcset="img/new-3-tablet.webp"
+                      media="(max-width: 1440px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="img/new-3.webp"
+                      alt="Изображение стикера"
+                      width="624"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="new__stickers">
+                  <picture>
+                    <source
+                      srcset="img/new-4-tablet.webp"
+                      media="(max-width: 1440px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="img/new-4.webp"
+                      alt="Изображение стикера"
+                      width="875"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                  <picture>
+                    <source
+                      srcset="img/new-5-tablet.webp"
+                      media="(max-width: 1440px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="img/new-5.webp"
+                      alt="Изображение стикера"
+                      width="377"
+                      height="300"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </picture>
                 </div>
               </div>
@@ -447,10 +609,14 @@
                 <b>Удачи!</b>
               </p>
               <img
-                src="img/become-decorate.png"
+                src="img/become-decorate.webp"
                 alt=""
                 class="become-author__decorate"
                 aria-hidden="true"
+                width="624"
+                height="252"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div class="become-author__form">
@@ -485,21 +651,30 @@
                 <div class="top-product__image">
                   <picture>
                     <source
-                      srcset="img/top-1-tablet.png"
+                      srcset="img/top-1-tablet.webp"
                       media="(max-width: 768px)"
+                      type="image/webp"
                     />
                     <img
-                      src="img/top-1.png"
+                      src="img/top-1.webp"
                       alt="Изображение стикера Holofobia1"
+                      width="126"
+                      height="142"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </picture>
                 </div>
                 <div class="top-product__info">
                   <div class="auction-owner top-product__owner">
                     <img
-                      src="img/avatar-1.jpg"
+                      src="img/avatar-1.webp"
                       alt="Аватарка владельца ttgs"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">ttgs</span>
                   </div>
@@ -516,18 +691,30 @@
                 <div class="top-product__image">
                   <picture>
                     <source
-                      srcset="img/top-2-tablet.png"
+                      srcset="img/top-2-tablet.webp"
                       media="(max-width: 768px)"
+                      type="image/webp"
                     />
-                    <img src="img/top-2.png" alt="Изображение стикера Y.EEE" />
+                    <img
+                      src="img/top-2.webp"
+                      alt="Изображение стикера Y.EEE"
+                      width="126"
+                      height="142"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </picture>
                 </div>
                 <div class="top-product__info">
                   <div class="auction-owner top-product__owner">
                     <img
-                      src="img/avatar-2.jpg"
+                      src="img/avatar-2.webp"
                       alt="Аватарка владельца Tat_2"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">Tat_2</span>
                   </div>
@@ -544,21 +731,30 @@
                 <div class="top-product__image">
                   <picture>
                     <source
-                      srcset="img/top-3-tablet.png"
+                      srcset="img/top-3-tablet.webp"
                       media="(max-width: 768px)"
+                      type="image/webp"
                     />
                     <img
-                      src="img/top-3.png"
+                      src="img/top-3.webp"
                       alt="Изображение стикера Baby Joda"
+                      width="126"
+                      height="142"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </picture>
                 </div>
                 <div class="top-product__info">
                   <div class="auction-owner top-product__owner">
                     <img
-                      src="img/avatar-3.jpg"
+                      src="img/avatar-3.webp"
                       alt="Аватарка владельца Chris22"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">Chris22</span>
                   </div>
@@ -575,21 +771,30 @@
                 <div class="top-product__image">
                   <picture>
                     <source
-                      srcset="img/top-4-tablet.png"
+                      srcset="img/top-4-tablet.webp"
                       media="(max-width: 768px)"
+                      type="image/webp"
                     />
                     <img
-                      src="img/top-4.png"
+                      src="img/top-4.webp"
                       alt="Изображение стикера Infinity_09"
+                      width="126"
+                      height="142"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </picture>
                 </div>
                 <div class="top-product__info">
                   <div class="auction-owner top-product__owner">
                     <img
-                      src="img/avatar-4.jpg"
+                      src="img/avatar-4.webp"
                       alt="Аватарка владельца Oswaald"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">Oswaald</span>
                   </div>
@@ -606,21 +811,30 @@
                 <div class="top-product__image">
                   <picture>
                     <source
-                      srcset="img/top-5-tablet.png"
+                      srcset="img/top-5-tablet.webp"
                       media="(max-width: 768px)"
+                      type="image/webp"
                     />
                     <img
-                      src="img/top-5.png"
+                      src="img/top-5.webp"
                       alt="Изображение стикера Sadsadsad"
+                      width="126"
+                      height="142"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </picture>
                 </div>
                 <div class="top-product__info">
                   <div class="auction-owner top-product__owner">
                     <img
-                      src="img/avatar-5.jpg"
+                      src="img/avatar-5.webp"
                       alt="Аватарка владельца Paul-22"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">Paul-22</span>
                   </div>
@@ -637,18 +851,30 @@
                 <div class="top-product__image">
                   <picture>
                     <source
-                      srcset="img/top-6-tablet.png"
+                      srcset="img/top-6-tablet.webp"
                       media="(max-width: 768px)"
+                      type="image/webp"
                     />
-                    <img src="img/top-6.png" alt="Изображение стикера Attntn" />
+                    <img
+                      src="img/top-6.webp"
+                      alt="Изображение стикера Attntn"
+                      width="126"
+                      height="142"
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </picture>
                 </div>
                 <div class="top-product__info">
                   <div class="auction-owner top-product__owner">
                     <img
-                      src="img/avatar-6.jpg"
+                      src="img/avatar-6.webp"
                       alt="Аватарка владельца wardxxx"
                       class="auction-owner__avatar"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span class="auction-owner__nickname">wardxxx</span>
                   </div>
@@ -696,6 +922,10 @@
             <img
               src="img/slotspgsoft-com-br-logo-mobile.svg"
               alt="Логотип компании"
+              width="47"
+              height="26"
+              loading="lazy"
+              decoding="async"
             />
           </a>
           <ul class="footer__list list-reset">
@@ -715,7 +945,7 @@
         <span class="footer__text">PG<sup class="reg">®</sup> | 2025</span>
       </div>
     </footer>
-    <script src="javascript/swiper-bundle.min.js"></script>
-    <script src="javascript/script.js"></script>
+    <script defer src="javascript/swiper-bundle.min.js"></script>
+    <script defer src="javascript/script.js"></script>
   </body>
 </html>

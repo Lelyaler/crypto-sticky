@@ -10,6 +10,7 @@ html {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -19,22 +20,23 @@ a {
 
 @font-face {
   font-family: 'Muller';
-  src: url('../fonts/MullerRegular.woff2'), url('../fonts/MullerRegular.woff');
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
   font-display: swap;
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Muller';
-  src: url('../fonts/MullerBold.woff2'), url('../fonts/MullerBold.woff');
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
   font-display: swap;
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'Russo';
-  src: url('../fonts/RussoOne-Regular.woff2'),
-    url('../fonts/RussoOne-Regular.woff');
+  src: url('../fonts/RussoOne-Regular.woff') format('woff');
   font-display: swap;
   font-weight: 400;
 }
@@ -297,19 +299,10 @@ body {
   }
 }
 
-@keyframes fadeInBackground {
-  20% {
-    background-color: #00000098; /* Начинаем с прозрачного фона */
-  }
-  100% {
-    background-color: #000000; /* Конечный цвет фона */
-  }
-}
-
 .hero {
   position: relative;
   height: 600px;
-  animation: fadeInBackground 1s ease-out 0.5s forwards; /* Анимация фона */
+  background-color: #000000;
 }
 
 .hero__container {
@@ -332,16 +325,14 @@ body {
   position: relative;
   z-index: 10;
   width: 50%;
-  animation: fadeInUp 1s ease-out 1.5s forwards;
-  opacity: 0;
+  animation: fadeInUp 0.6s ease-out both;
 }
 
 .hero__buttons {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  animation: fadeInUp 1s ease-out 1.8s forwards;
-  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.15s both;
 }
 
 .hero__btn {
@@ -441,13 +432,13 @@ body {
   position: absolute;
   right: 10%;
   bottom: -5px;
-  animation: slideInFromLeft 1.5s ease-out 0.5s forwards;
-  opacity: 0;
+  animation: slideInFromLeft 0.6s ease-out both;
 }
 
 .hero__img img {
   width: 600px;
   max-width: 100%;
+  height: auto;
 }
 .auction-bet-section.animate {
   opacity: 1;
@@ -750,7 +741,7 @@ body {
   margin-bottom: 34px;
   padding-left: 64px;
   color: var(--color-light);
-  background-image: url('../img/fire.png');
+  background-image: url('../img/fire.webp');
   background-position: left center;
   background-size: 48px 48px;
   background-repeat: no-repeat;
@@ -824,7 +815,7 @@ body {
 .subscribe__container {
   padding-top: var(--gap);
   padding-bottom: 20px;
-  background-image: url('../img/subscribe-bg.png');
+  background-image: url('../img/subscribe-bg.webp');
   background-position: calc(100% - 12px) center;
   background-repeat: no-repeat;
 }
@@ -1205,7 +1196,7 @@ body {
 
 .top-info__container {
   padding: var(--gap) 12px;
-  background-image: url('../img/top-info-bg.png');
+  background-image: url('../img/top-info-bg.webp');
   background-size: 460px 160px;
   background-position: calc(100% - 12px) center;
   background-repeat: no-repeat;
