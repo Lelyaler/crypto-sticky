@@ -88,7 +88,7 @@
     align-items: flex-end;
     padding: 0;
     width: 100%;
-    background-image: url('../img/become-decorate-tablet.png');
+    background-image: url('../img/become-decorate-tablet.webp');
     background-position: left center;
     background-repeat: no-repeat;
   }
@@ -117,6 +117,7 @@
   }
   .hero__img img {
     width: 100%;
+    height: auto;
   }
 }
 
