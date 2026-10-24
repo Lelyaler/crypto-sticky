@@ -1,4 +1,51 @@
-<svg width="121" height="121" viewBox="0 0 121 121" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M60.3272 111.275C88.4647 111.275 111.275 88.4647 111.275 60.3272C111.275 32.1898 88.4647 9.37988 60.3272 9.37988C32.1898 9.37988 9.37985 32.1898 9.37985 60.3272C9.37985 88.4647 32.1898 111.275 60.3272 111.275Z" stroke="#717178" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M60.3269 34.8535V60.3272L73.0637 73.064" stroke="#717178" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="clockGrad" x1="16" y1="16" x2="104" y2="104" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#46F4DB" />
+      <stop offset="100%" stop-color="#57D272" />
+    </linearGradient>
+    <linearGradient id="clockGlow" x1="60" y1="20" x2="60" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#46F4DB" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#57D272" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer tech brackets -->
+  <path d="M22 36V22H36" stroke="#46F4DB" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" />
+  <path d="M98 36V22H84" stroke="#46F4DB" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" />
+  <path d="M22 84V98H36" stroke="#46F4DB" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" />
+  <path d="M98 84V98H84" stroke="#46F4DB" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Outer segmented track -->
+  <circle cx="60" cy="60" r="44" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2" stroke-dasharray="2 6" />
+
+  <!-- Countdown progress arc -->
+  <path d="M60 16 A44 44 0 1 1 24 82" stroke="url(#clockGrad)" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- Inner ambient background -->
+  <circle cx="60" cy="60" r="34" fill="url(#clockGlow)" />
+  <circle cx="60" cy="60" r="34" stroke="#46F4DB" stroke-opacity="0.2" stroke-width="1.5" />
+
+  <!-- Radial hour notches -->
+  <line x1="60" y1="28" x2="60" y2="33" stroke="#46F4DB" stroke-width="2" stroke-linecap="round" />
+  <line x1="92" y1="60" x2="87" y2="60" stroke="#46F4DB" stroke-width="2" stroke-linecap="round" />
+  <line x1="60" y1="92" x2="60" y2="87" stroke="#46F4DB" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" />
+  <line x1="28" y1="60" x2="33" y2="60" stroke="#46F4DB" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" />
+
+  <line x1="82.6" y1="37.4" x2="79" y2="41" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="82.6" y1="82.6" x2="79" y2="79" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="37.4" y1="82.6" x2="41" y2="79" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="37.4" y1="37.4" x2="41" y2="41" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Chronometer hands -->
+  <!-- Minute hand pointing to 2 o'clock -->
+  <path d="M60 60 L78 42" stroke="url(#clockGrad)" stroke-width="3" stroke-linecap="round" />
+  <!-- Hour hand pointing to 12 o'clock -->
+  <path d="M60 60 L60 40" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" />
+  <!-- Second counter pointer -->
+  <path d="M60 60 L52 74" stroke="#46F4DB" stroke-opacity="0.6" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Central core hub -->
+  <circle cx="60" cy="60" r="6" fill="#12101e" stroke="url(#clockGrad)" stroke-width="2.5" />
+  <circle cx="60" cy="60" r="2.5" fill="#46F4DB" />
 </svg>

@@ -1,0 +1,62 @@
+<svg width="216" height="44" viewBox="0 0 216 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Vibrant Sticker Gradient -->
+    <linearGradient id="stickGrad" x1="4" y1="4" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#46F4DB"/>
+      <stop offset="50%" stop-color="#00C9FF"/>
+      <stop offset="100%" stop-color="#57D272"/>
+    </linearGradient>
+
+    <!-- Folded Peel Flap Gradient (Metallic/White) -->
+    <linearGradient id="peelFlap" x1="28" y1="28" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <!-- Subtle Cyan Drop Glow -->
+    <filter id="logoGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#46F4DB" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Sticker Icon (x=2, y=2 to 42x42) -->
+  <g transform="translate(2, 2)">
+    <!-- Die-Cut White Base & Shadow -->
+    <path d="M11 2 H28 A9 9 0 0 1 37 11 V25 L25 37 H11 A9 9 0 0 1 2 28 V11 A9 9 0 0 1 11 2 Z" fill="#FFFFFF" filter="url(#logoGlow)"/>
+    
+    <!-- Colored Sticker Surface -->
+    <path d="M11 4 H27 A7 7 0 0 1 34 11 V24 L24 34 H11 A7 7 0 0 1 4 27 V11 A7 7 0 0 1 11 4 Z" fill="url(#stickGrad)"/>
+
+    <!-- Peeled Corner Flap (3D realistic sticker fold) -->
+    <path d="M24 34 L34 24 H26 A2 2 0 0 0 24 26 V34 Z" fill="url(#peelFlap)"/>
+    <!-- Fold Shadow Underneath Flap -->
+    <path d="M24 25 L34 24 L24 34 Z" fill="#000000" fill-opacity="0.22"/>
+
+    <!-- Ethereum Crypto Diamond Core (Pure White & Bright Cyan) -->
+    <!-- Top-left facet -->
+    <polygon points="19,9 13.5,19 19,16.5" fill="#FFFFFF" fill-opacity="0.95"/>
+    <!-- Top-right facet -->
+    <polygon points="19,9 19,16.5 24.5,19" fill="#FFFFFF" fill-opacity="0.75"/>
+    <!-- Bottom-left facet -->
+    <polygon points="19,17.5 13.5,20.5 19,27" fill="#071A2E" fill-opacity="0.9"/>
+    <!-- Bottom-right facet -->
+    <polygon points="19,17.5 19,27 24.5,20.5" fill="#0E2A47" fill-opacity="0.8"/>
+
+    <!-- Sparkling Starlet -->
+    <circle cx="8" cy="9" r="1.5" fill="#FFFFFF"/>
+    <circle cx="10.5" cy="9" r="0.6" fill="#FFFFFF"/>
+    <circle cx="8" cy="11.5" r="0.6" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Typography: High Contrast, Bold, Ultra Clear -->
+  <!-- Top Label: 'CRYPTO' in Neon Cyan -->
+  <text x="48" y="16" font-family="'Muller', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="900" letter-spacing="3.5" fill="#46F4DB">CRYPTO</text>
+
+  <!-- Bottom Title: 'STICKY' in Crisp Pure White -->
+  <text x="48" y="36" font-family="'Russo', 'Russo One', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="900" letter-spacing="1.2" fill="#FFFFFF">STICKY</text>
+
+  <!-- Sleek NFT Badge -->
+  <rect x="170" y="18" width="38" height="16" rx="8" fill="rgba(70, 244, 219, 0.15)" stroke="#46F4DB" stroke-width="1.2"/>
+  <text x="189" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="900" letter-spacing="1" fill="#46F4DB" text-anchor="middle">NFT</text>
+</svg>

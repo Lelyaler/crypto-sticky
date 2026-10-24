@@ -1,0 +1,27 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fireOuterGrad" x1="10" y1="44" x2="38" y2="4" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF3366" />
+      <stop offset="50%" stop-color="#FF8A00" />
+      <stop offset="100%" stop-color="#FFC837" />
+    </linearGradient>
+    <linearGradient id="fireCoreGrad" x1="18" y1="42" x2="30" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#46F4DB" />
+      <stop offset="100%" stop-color="#57D272" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer stylized cyber flame -->
+  <path d="M24 3 C25.5 8 28.5 12 32 15 C36.5 18.8 39 24.2 39 30 C39 38.3 32.3 45 24 45 C15.7 45 9 38.3 9 30 C9 22.8 13.5 16.8 17 13.5 C17.8 17.5 19.5 20.2 22 21.5 C21.5 17 22.2 10.5 24 3 Z" fill="url(#fireOuterGrad)" />
+
+  <!-- Inner dynamic energy core -->
+  <path d="M24 19 C25.2 22.5 27 25 29.5 27 C31.8 28.8 33 31.5 33 34.5 C33 39.5 29 43 24 43 C19 43 15 39.5 15 34.5 C15 30.5 17.8 26.5 20 24.5 C20.5 26.8 21.8 28.2 23 29 C22.8 25.5 23.2 22.5 24 19 Z" fill="#12101e" fill-opacity="0.25" />
+
+  <!-- Plasma core spark -->
+  <path d="M24 25 C25 27.5 26.5 29.5 28 31 C29.5 32.5 30 34 30 36 C30 39.3 27.3 42 24 42 C20.7 42 18 39.3 18 36 C18 33 20 30.2 21.5 28.8 C21.8 30.2 22.8 31.2 23.5 31.8 C23.2 29.2 23.5 27.2 24 25 Z" fill="url(#fireCoreGrad)" />
+
+  <!-- Floating plasma sparks -->
+  <circle cx="36" cy="11" r="2" fill="#FFC837" />
+  <circle cx="13" cy="18" r="1.5" fill="#46F4DB" />
+  <circle cx="28" cy="6" r="1.5" fill="#FF8A00" />
+</svg>

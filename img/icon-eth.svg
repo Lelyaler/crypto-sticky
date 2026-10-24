@@ -1,0 +1,16 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ethGradLight" x1="8" y1="1" x2="8" y2="15" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#46F4DB" />
+      <stop offset="100%" stop-color="#57D272" />
+    </linearGradient>
+  </defs>
+  <!-- Top left facet -->
+  <polygon points="8,1.2 2.8,9.4 8,7.3" fill="url(#ethGradLight)" fill-opacity="0.75" />
+  <!-- Top right facet -->
+  <polygon points="8,1.2 8,7.3 13.2,9.4" fill="url(#ethGradLight)" />
+  <!-- Center bottom left -->
+  <polygon points="8,7.8 2.8,10.1 8,14.8" fill="url(#ethGradLight)" fill-opacity="0.6" />
+  <!-- Center bottom right -->
+  <polygon points="8,7.8 8,14.8 13.2,10.1" fill="url(#ethGradLight)" fill-opacity="0.85" />
+</svg>
