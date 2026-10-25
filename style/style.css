@@ -184,9 +184,9 @@ body {
 .header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 150;
   padding: 16px 0;
-  background: rgba(14, 12, 22, 0.88);
+  background: rgba(14, 12, 22, 0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -384,6 +384,7 @@ body {
 
 .header__burger {
   display: none;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   width: 32px;
@@ -392,7 +393,7 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
-  z-index: 120;
+  z-index: 170;
 }
 
 .header__burger-line {
@@ -429,7 +430,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  z-index: 105;
+  z-index: 140;
 }
 
 .nav-overlay.is-open {
