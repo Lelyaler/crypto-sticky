@@ -383,6 +383,38 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
+const burgerBtn = document.querySelector('.header__burger');
+const navMenu = document.querySelector('.header__nav');
+const navOverlay = document.getElementById('nav-overlay');
+
+function toggleMobileNav(state) {
+  const isOpen = typeof state === 'boolean' ? state : !navMenu.classList.contains('is-open');
+  if (burgerBtn) {
+    burgerBtn.classList.toggle('is-active', isOpen);
+    burgerBtn.setAttribute('aria-expanded', String(isOpen));
+  }
+  if (navMenu) {
+    navMenu.classList.toggle('is-open', isOpen);
+  }
+  if (navOverlay) {
+    navOverlay.classList.toggle('is-open', isOpen);
+  }
+  document.body.classList.toggle('nav-locked', isOpen);
+}
+
+if (burgerBtn) {
+  burgerBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMobileNav();
+  });
+}
+
+if (navOverlay) {
+  navOverlay.addEventListener('click', () => {
+    toggleMobileNav(false);
+  });
+}
+
 const dropdownItems = document.querySelectorAll('.nav__item--dropdown');
 dropdownItems.forEach((item) => {
   const link = item.querySelector('.nav__link');
@@ -400,8 +432,23 @@ dropdownItems.forEach((item) => {
   }
 });
 
-document.addEventListener('click', (e) => {
-  if (!e.target.closest('.nav__item--dropdown')) {
+document.querySelectorAll('.header__nav .nav__link:not(.nav__item--dropdown .nav__link), .header__nav .nav__sublink').forEach((link) => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 992) {
+      toggleMobileNav(false);
+    }
+  });
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    toggleMobileNav(false);
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 992) {
+    toggleMobileNav(false);
     dropdownItems.forEach((item) => item.classList.remove('is-open'));
   }
 });

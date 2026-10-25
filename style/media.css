@@ -220,6 +220,143 @@
 }
 
 @media (max-width: 992px) {
+  .header {
+    padding: 14px 0;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .header__logo {
+    max-width: 190px;
+    margin-right: 0;
+  }
+
+  .header__logo img {
+    height: 38px;
+  }
+
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header__network {
+    display: none;
+  }
+
+  .header__btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .header__burger {
+    display: flex;
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: 0; transform: translateX(100%); visibility: hidden;
+    width: min(340px, 86vw);
+    height: 100vh;
+    height: 100dvh;
+    background: #12101f;
+    box-shadow: -14px 0 40px rgba(0, 0, 0, 0.65);
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 84px 24px 36px 24px;
+    overflow-y: auto;
+    z-index: 110;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.32s ease;
+  }
+
+  .header__nav.is-open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  .header__nav .nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+  }
+
+  .header__nav .nav__item {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .header__nav .nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ededf5;
+    background: rgba(255, 255, 255, 0.03);
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .header__nav .nav__link:hover,
+  .header__nav .nav__link:focus-visible {
+    background: rgba(255, 255, 255, 0.08);
+    color: #46f4db;
+  }
+
+  .header__nav .nav__item--dropdown .nav__dropdown {
+    position: static;
+    width: 100%;
+    min-width: auto;
+    margin-top: 6px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 14px;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+    border: none;
+  }
+
+  .header__nav .nav__item--dropdown.is-open .nav__dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .header__nav .nav__sublink {
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #c8c7d8;
+    background: transparent;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+
+  .header__nav .nav__sublink:hover,
+  .header__nav .nav__sublink:focus-visible {
+    background: rgba(70, 244, 219, 0.12);
+    color: #46f4db;
+    transform: translateX(4px);
+  }
+
   .hero {
     min-height: auto;
     padding: 48px 0 0;
@@ -544,58 +681,7 @@
   }
 
   .header {
-    padding: 12px 0 16px;
-  }
-
-  .header__container {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .header__nav {
-    border: none;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 100px;
-    padding: 8px 12px;
-    margin-top: 14px;
-    margin-right: 0;
-    width: 100%;
-    order: 3;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .header__nav .nav__list {
-    justify-content: flex-start;
-    white-space: nowrap;
-    gap: 4px;
-  }
-
-  .nav__item:not(:last-child) {
-    margin-right: 6px;
-  }
-
-  .nav__item--dropdown .nav__dropdown {
-    position: absolute;
-    top: calc(100% + 8px);
-    left: 0;
-    min-width: 260px;
-    z-index: 150;
-  }
-
-  .nav__item--dropdown.is-open .nav__dropdown {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-
-  .header__btn {
-    padding: 10px 22px;
-    font-size: 14px;
-  }
-
-  .header__network {
-    display: none;
+    padding: 12px 0;
   }
 
   .auction__list {
@@ -639,6 +725,32 @@
 }
 
 @media (max-width: 576px) {
+  .header {
+    padding: 10px 0;
+  }
+
+  .header__logo {
+    max-width: 155px;
+  }
+
+  .header__logo img {
+    height: 30px;
+  }
+
+  .header__btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .header__btn-icon {
+    margin-right: 5px;
+  }
+
+  .header__burger {
+    width: 28px;
+    height: 19px;
+  }
+
   .hero {
     padding: 36px 0 0;
   }

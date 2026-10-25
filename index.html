@@ -29,7 +29,7 @@
             height="44"
           />
         </a>
-        <nav class="nav header__nav">
+        <nav class="nav header__nav" id="header-nav">
           <ul class="nav__list list-reset">
             <li class="nav__item nav__item--dropdown">
               <a href="#live-auction" class="nav__link">
@@ -82,9 +82,15 @@
             <img src="img/icon-wallet.svg" alt="" width="16" height="16" class="header__btn-icon" />
             Кошелёк
           </button>
+          <button class="header__burger btn-reset" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="header-nav">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
         </div>
       </div>
     </header>
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
     <main>
       <section class="hero">
         <div class="container hero__container">
