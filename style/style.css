@@ -800,9 +800,14 @@ body.nav-locked {
 .auction-bet-section__image {
   margin-right: calc(var(--gap) * 1.2);
   min-width: 440px;
+  width: 440px;
+  aspect-ratio: 1 / 1;
 }
 
 .auction-bet-section__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 32px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
 }

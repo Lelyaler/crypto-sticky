@@ -605,7 +605,8 @@
   .auction-bet-section__image {
     min-width: auto;
     width: 100%;
-    max-width: 440px;
+    max-width: 380px;
+    aspect-ratio: 1 / 1;
     margin: 0 auto 28px;
     display: flex;
     justify-content: center;
@@ -614,7 +615,9 @@
   .auction-bet-section__image img {
     width: 100%;
     max-width: 380px;
-    height: auto;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     margin: 0 auto;
     display: block;
   }
