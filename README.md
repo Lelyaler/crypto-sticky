@@ -24,14 +24,3 @@
 - Vanilla JavaScript (ES6+)
 - Swiper.js
 
-## Запуск проекта
-
-Открыть файл `index.html` в браузере или запустить через локальный сервер:
-
-```bash
-# Python
-python3 -m http.server 8000
-
-# Node.js
-npx serve
-```
