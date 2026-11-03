@@ -518,32 +518,31 @@ body.nav-locked {
   animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-.hero__badge {
+.hero__lead-tag {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 8px 18px;
-  border-radius: 100px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
-  margin-bottom: 24px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  border: none;
-}
-
-.hero__badge-pulse {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--color-primary);
-  box-shadow: 0 0 10px var(--color-primary);
-  animation: livePulse 1.6s infinite ease-in-out;
-}
-
-.hero__badge-text {
+  gap: 8px;
+  margin-bottom: 20px;
   font-size: 14px;
+  font-weight: 600;
+  color: #c7c7d4;
+  letter-spacing: 0.3px;
+}
+
+.hero__lead-highlight {
+  color: var(--color-primary);
   font-weight: 700;
-  color: #ededf5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12.5px;
+}
+
+.hero__lead-sep {
+  opacity: 0.35;
+}
+
+.hero__lead-dot {
+  opacity: 0.45;
 }
 
 .hero__buttons {
@@ -2178,12 +2177,6 @@ body.nav-locked {
   flex-shrink: 0;
 }
 
-.hero__badge-icon {
-  display: inline-flex;
-  align-items: center;
-  margin-right: 8px;
-  flex-shrink: 0;
-}
 
 .hero__stat-icon {
   display: inline-block;

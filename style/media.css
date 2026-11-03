@@ -393,8 +393,8 @@
     align-items: center;
   }
 
-  .hero__badge {
-    margin: 0 auto 20px auto;
+  .hero__lead-tag {
+    margin: 0 auto 18px auto;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -836,17 +836,15 @@
     margin: 0 auto;
   }
 
-  .hero__badge {
-    padding: 6px 14px;
-    margin: 0 auto 16px auto;
+  .hero__lead-tag {
+    font-size: 12px;
+    margin: 0 auto 14px auto;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-
-  .hero__badge-text {
-    font-size: 12px;
+    flex-wrap: wrap;
+    gap: 6px;
   }
 
   .hero__title {
